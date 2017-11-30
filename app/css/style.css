@@ -1,0 +1,40 @@
+.first{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 80px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color:blanchedalmond;
+}
+.business{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 48px;
+    padding: 3px;
+    background-color: plum;
+    box-sizing: border-box;
+}
+.economy{
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    border: 1px solid black;
+    margin: 30px;
+    background-color:lavender;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*.green-class{*/
+    /*background-color:lightyellow !important;*/
+/*}*/
+/*.red-class{*/
+    /*background-color: palevioletred !important;*/
+/*}*/
+
+.box{
+    border: solid;
+    border-color: burlywood;
+}

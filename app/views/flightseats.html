@@ -1,0 +1,100 @@
+<div class="container box" ng-controller="FlightsController">
+    <h1>Flight Seating</h1>
+
+<div class="container">
+
+    <div class="section">
+        <div ng-repeat="seat in firstSeats">
+            <div class="col-md-3 col-sm-6 col-lg-2 first">
+                <span ng-class="{'green-class': seat.occupied, 'red-class' : !seat.occupied }">
+                {{seat.seat}}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div ng-repeat="seat in businessSeats">
+        <div class="col-md-6 col-sm-6 col-lg-6 business">
+            <span ng-class="{'green-class': seat.occupied, 'red-class' : !seat.occupied }">
+            {{seat.seat}}
+            </span>
+        </div>
+    </div>
+
+    <div ng-repeat="seat in economySeats">
+        <div class="col-md-6 col-sm-6 col-lg-6 economy">
+            <span ng-class="{'green-class': seat.occupied, 'red-class' : !seat.occupied }">
+            {{seat.seat}}
+            </span>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<!--=================================================================================================================-->
+                                                        <!--NOTES-->
+<!--=================================================================================================================-->
+
+
+<!--1. First version of printing seats by just the seats based on cabin class-->
+<!--2. Wasn't dynamic as there was no way to find the number of columns(seats) in each row-->
+
+<!--<div ng-repeat="seat in firstSeats">-->
+<!--<div class="col-md-3 col-sm-6 col-lg-2 first">-->
+<!--<span ng-class="{'green-class': seat.occupied, 'red-class' : !seat.occupied }">-->
+<!--{{seat.seat}}-->
+<!--</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div ng-repeat="seat in businessSeats">-->
+<!--<div class="col-md-6 col-sm-6 col-lg-6 business">-->
+<!--<span ng-class="{'green-class': seat.occupied, 'red-class' : !seat.occupied }">-->
+<!--{{seat.seat}}-->
+<!--</span>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div ng-repeat="seat in economySeats">-->
+<!--<div class="col-md-6 col-sm-6 col-lg-6 economy">-->
+<!--<span ng-class="{'green-class': seat.occupied, 'red-class' : !seat.occupied }">-->
+
+<!--To check if the seats or either occupied or premium or overwing. Based on on whether it is true or false,
+a different style is added to the seat.-->
+
+<!--{{seat.seat}}-->
+<!--</span>-->
+<!--</div>-->
+<!--</div>-->
+
+
+
+<!--<div ng-repeat="(row, rowvalue) in obj.First">-->
+<!--<span ng-repeat="(seat, seatvalue) in rowvalue" class="first">-->
+<!--{{row}}-->
+<!--</span>-->
+<!--</div>-->
+<!--</br>-->
+<!--<div ng-repeat="(row, rowvalue) in obj.Business">-->
+<!--<span ng-repeat="(seat, seatvalue) in rowvalue" class="business">-->
+<!--{{row}}-->
+<!--</span>-->
+<!--</div>-->
+<!--</br>-->
+<!--<div ng-repeat="(row, rowvalue) in obj.Economy">-->
+<!--<span ng-repeat="(seat, seatvalue) in rowvalue" class="economy">-->
+<!--{{row}}-->
+<!--</span>-->
+<!--</div>-->
+
+<!--</br>-->
+
+
+<!--=================================================================================================================-->
+
+
+
+
+
+
